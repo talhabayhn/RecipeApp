@@ -7,10 +7,10 @@ import java.io.Serializable
 
 
 @Entity(tableName = "Recipes")
-data class Recipes @JvmOverloads constructor(
+data class Recipes(
         @PrimaryKey(autoGenerate = true)
-        var number:Int,
+        var a:Int,
 
-        @ColumnInfo(name ="dishName")
-        var dishName: String
-): Serializable
+        @ColumnInfo(name = "dishName")
+        var dishName:String
+) : Serializable
